@@ -1,0 +1,219 @@
+/* Element Names */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/cover.jpg)  no-repeat center center/ cover;
+    min-height: 60vh;
+    overflow-y:auto;
+
+    /* temp */
+    /* border:solid;
+    border-radius: 1;
+    border-color: aqua; */
+    
+}
+
+body::before{
+    opacity: 0.1;
+}
+
+/* Class Names */
+.conatiner{
+    height:600px;
+    width:600px;
+
+    /* temp */
+    /* border:solid;
+    border-radius: 1;
+    border-color: green; */
+}
+
+.header{
+    margin: 1vh 0 0 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.7);
+    text-decoration: underline;
+    font-size: 2rem;
+      
+
+    /* temp */
+    border: solid;
+    border-color:grey;
+    box-shadow: 0px 0px 3px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.main-content{
+    margin:20px 0 20px 0;
+    padding: 10px 5px;
+    background-color: rgba(255,255,255,0.8);
+    display: flex;
+    justify-content: center;
+    height:10vh;
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+
+    /* temp */
+    /* border-color: black;
+    border-radius: 1;
+    border: solid; */
+}
+
+/* IDs */
+#add-task {
+
+    flex: 1;
+    transition: .3s;
+
+    font-size: 1.2rem;
+    padding: 5px;
+
+    background-color: #fff;
+    color: green;
+
+    border: green solid 2px;
+    border-radius: 10px;
+}
+
+#add-task:hover {
+    background-color: green;
+    color: #fff;
+}
+
+#input-task{
+    text-align: center;
+    width:90%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin: 0 5px 0 0;
+
+}
+
+
+
+#task-container{
+    padding: 20px 10px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+    margin-bottom: 20px;
+    display:grid;
+    justify-content: center;
+
+    /* temp */
+    border:solid;
+    border-radius: 1;
+    border-color: red;
+}
+
+.task {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 3px;
+
+    padding: 5px;
+    margin-bottom: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task li {
+    list-style: none;
+    flex: 4;
+    padding: 5px;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.task button {
+    flex: 5;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    height:70%;
+    width: 3rem;
+}
+
+.task .checkTask {
+    color: orange;
+    margin-right: 5px;
+    border: solid 2px orange;
+    font-size: 1.5rem;
+}
+
+.task .checkTask:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+.task .updateTask {
+    color: blue;
+    margin-right: 5px;
+    border: solid 2px blue;
+    font-size: 1.3rem;
+}
+
+.task .updateTask:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+.task .deleteTask {
+    color: red;
+    border: solid 2px red;
+    font-size: 1.3rem;
+}
+
+
+.task .deleteTask:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.task .doneTask {
+    color: green;
+    margin-right: 5px;
+    border: solid 2px green;
+    font-size: 1.3rem;
+}
+
+.task .doneTask:hover {
+    background-color: green;
+    color: #fff;
+}
+
+.task .cancelTask {
+    color: red;
+    border: solid 2px red;
+    font-size: 1.3rem;
+}
+
+.task .cancelTask:hover {
+    background-color: red;
+    color: #fff;
+}
+
+#update-task{
+    text-align: center;
+    width:90%;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin: 0 5px 0 0;
+}
+
+
+
+
